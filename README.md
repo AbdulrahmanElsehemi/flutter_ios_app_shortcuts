@@ -164,6 +164,15 @@ struct MyAppShortcutsProvider: AppShortcutsProvider {
 }
 ```
 
+> **iOS 26+** — Call `updateAppShortcutParameters()` once at app launch, otherwise shortcuts may not appear in Spotlight:
+>
+> ```swift
+> // In AppDelegate.application(didFinishLaunchingWithOptions:)
+> if #available(iOS 16, *) {
+>     MyAppShortcutsProvider.updateAppShortcutParameters()
+> }
+> ```
+
 ---
 
 ## Dart Setup

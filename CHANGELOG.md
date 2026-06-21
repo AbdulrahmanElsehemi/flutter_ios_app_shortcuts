@@ -1,3 +1,8 @@
+## 0.1.1
+
+* Fix `MissingPluginException` on EventChannel — retain `FlutterEventChannel` as static property to prevent ARC deallocation.
+* Add `updateAppShortcutParameters()` guidance for iOS 26+ shortcut visibility.
+
 ## 0.1.0
 
 * Initial release.

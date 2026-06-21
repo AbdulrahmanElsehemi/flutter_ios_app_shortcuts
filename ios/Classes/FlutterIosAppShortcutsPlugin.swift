@@ -38,6 +38,9 @@ public class FlutterIosAppShortcutsPlugin: NSObject, FlutterPlugin {
 
     private static var eventSink: FlutterEventSink?
 
+    // Retained to prevent ARC from deallocating the channel after register(with:) returns.
+    private static var _eventChannel: FlutterEventChannel?
+
     // MARK: - FlutterPlugin registration
 
     public static func register(with registrar: FlutterPluginRegistrar) {
@@ -49,6 +52,7 @@ public class FlutterIosAppShortcutsPlugin: NSObject, FlutterPlugin {
             name: eventChannelName,
             binaryMessenger: registrar.messenger()
         )
+        _eventChannel = eventChannel // retain so ARC doesn't deallocate it
 
         let instance = FlutterIosAppShortcutsPlugin()
         registrar.addMethodCallDelegate(instance, channel: methodChannel)
