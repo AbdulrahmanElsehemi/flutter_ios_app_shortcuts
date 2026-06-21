@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_ios_app_shortcuts (0.1.0):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_ios_app_shortcuts (from `.symlinks/plugins/flutter_ios_app_shortcuts/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_ios_app_shortcuts:
+    :path: ".symlinks/plugins/flutter_ios_app_shortcuts/ios"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  flutter_ios_app_shortcuts: 204ad23518664b5b89fb705cefb150d6a787b743
+
+PODFILE CHECKSUM: bd29822c3d5baf6b44b726f00ea3293a19339ef2
+
+COCOAPODS: 1.16.2

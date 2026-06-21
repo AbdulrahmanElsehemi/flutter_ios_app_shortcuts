@@ -1,0 +1,34 @@
+name: flutter_ios_app_shortcuts
+description: >-
+  A Flutter plugin that enables iOS App Shortcuts (AppIntents, iOS 16+) to
+  deep-link directly into specific screens of your Flutter app. Handles both
+  cold-start and warm-start launches reliably without timing issues.
+version: 0.1.0
+homepage: https://github.com/abdulrahmanelsehemy/flutter_ios_app_shortcuts
+repository: https://github.com/abdulrahmanelsehemy/flutter_ios_app_shortcuts
+issue_tracker: https://github.com/abdulrahmanelsehemy/flutter_ios_app_shortcuts/issues
+topics:
+  - ios
+  - shortcuts
+  - appintents
+  - deep-link
+  - navigation
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: FlutterIosAppShortcutsPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
